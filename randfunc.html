@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Math.random()</h2>
+
+    <p>
+      Every time you click the button, getRndInteger(min, max) returns a random
+      number between 0 and 9 (both included):
+    </p>
+
+    <button
+      onclick="document.getElementById('demo').innerHTML = store5integer()"
+    >
+      Click Me
+    </button>
+
+    <p id="demo"></p>
+
+    <script>
+      function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+
+      function store5integer() {
+        const numbers = [0, 0, 0, 0, 0];
+
+        numbers[0] = getRndInteger(1, 15);
+
+        for (let i = 1; i < numbers.length; i++) {
+          numbers[i] = getRndInteger(1, 15);
+
+          while (numbers[i] == numbers[i - 1]) {
+            numbers[i] = getRndInteger(1, 15);
+          }
+        }
+        return numbers[4];
+      }
+    </script>
+  </body>
+</html>
