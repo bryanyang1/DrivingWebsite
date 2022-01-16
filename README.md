@@ -1,9 +1,10 @@
 # DrivingWebsite
 
-This is a driving website wiht no name
+Welcome to drivingaid.co!
 
 Scenario 1:
 What potential dangers are present when turning right?
+You might hit the black sedan when merging into the right lane.
 
 1. black sedan on the right (right)
 2. black SUV to the left
@@ -12,6 +13,7 @@ What potential dangers are present when turning right?
 
 Scenario 2:
 What potential dangers are present when turning left?
+You must be wary in case the grey car turns left with you.
 
 1. Grey car in front (right)
 2. Pedestrian on the right of the intersection
@@ -20,6 +22,7 @@ What potential dangers are present when turning left?
 
 Scenario 3:
 What potetial dangers are present when turning left?
+You may hit the back of the blue sedan.
 
 1. Grey SUV to the left
 2. Bus in front
@@ -28,6 +31,7 @@ What potetial dangers are present when turning left?
 
 Scenario 4:
 What are the potential dangers when crossing the intersection?
+The white truck might hit you from the side while you are crossing the intersection.
 
 1. Black sedan in front
 2. White truck to the left (right)
@@ -36,6 +40,7 @@ What are the potential dangers when crossing the intersection?
 
 Scenario 5:
 What are the potential dangers when turning right at this intersection?
+You might hit the pedestrians if you are not careful.
 
 1. Black SUV on the right
 2. Pedestrians on the right (right)
@@ -44,6 +49,7 @@ What are the potential dangers when turning right at this intersection?
 
 Scenario 7:
 What are the potential dangers when turning left?
+The grey sedan might hit you while you are going through the intersection
 
 1. Grey sedan in front (right)
 2. Black sedan behind grey sedan
@@ -51,6 +57,7 @@ What are the potential dangers when turning left?
 
 Scenarion 8:
 What are the potential dangers when turning right?
+You might hit the pedestrian while turning
 
 1. White SUV coming towards you
 2. Black SUV in front
@@ -59,6 +66,7 @@ What are the potential dangers when turning right?
 
 Scenarion 9:
 What are the potential dangers when passing the crosswalk?
+The pedestrian might suddenly jump onto the road and get hit.
 
 1. Black SUV in front
 2. Pedestrian on the left (rigth)

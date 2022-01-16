@@ -10,7 +10,7 @@
   <body>
     <style>
       body {
-        background-image: url("Assets/intersection\ 8.png");
+        background-image: url("Assets/intersection\ 2.png");
         background-color: #cccccc;
         background-attachment: fixed;
         background-size: 100% 100%;
@@ -21,22 +21,22 @@
       <p>What are the potential dangers when turning right?</p>
       <input
         type="button"
-        value="White SUV coming towards you"
-        onclick="Wrong()"
-      />
-      <br />
-      <br />
-      <input type="button" value="Black SUV in front" onclick="Wrong()" />
-      <br />
-      <br />
-      <input
-        type="button"
-        value="The pedestian on the right "
+        value="Grey car in front of you"
         onclick="Correct()"
       />
       <br />
       <br />
-      <input type="button" value="Grey SUV on the right " onclick="Wrong()" />
+      <input
+        type="button"
+        value="Pedestrian on the right of the intersection"
+        onclick="Wrong()"
+      />
+      <br />
+      <br />
+      <input type="button" value="White SUV in front" onclick="Wrong()" />
+      <br />
+      <br />
+      <input type="button" value="White sedan in front" onclick="Wrong()" />
       <br />
       <p id="wrong"></p>
       <p id="right"></p>
@@ -49,7 +49,7 @@
       }
       function Correct() {
         document.getElementById("right").innerHTML =
-          "Good Job! You might hit the black sedan when merging into the right lane.";
+          "Good Job! You must be wary in case the grey car turns left with you.";
         document.getElementById("wrong").innerHTML = "";
       }
     </script>
