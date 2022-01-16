@@ -19,13 +19,13 @@
 
     <div class="question">
       <p>What are the potential dangers when turning left?</p>
-      <input type="button" value="Grey sedan in front" onclick="Wrong()" />
+      <input type="button" value="Grey sedan in front" onclick="Correct()" />
       <br />
       <br />
       <input
         type="button"
         value="Black sedan behind grey sedan"
-        onclick="Correct()"
+        onclick="Wrong()"
       />
       <br />
       <br />
@@ -36,6 +36,10 @@
       <p id="right"></p>
     </div>
 
+    <button class="button" onclick="window.location.href=plus()" )>
+      Start
+    </button>
+
     <script>
       function Wrong() {
         document.getElementById("wrong").innerHTML = "Aw, too bad, try again!";
@@ -43,8 +47,20 @@
       }
       function Correct() {
         document.getElementById("right").innerHTML =
-          "Good Job! The grey sedan might hit you while you are going through the intersection.";
+          "Good Job! You might hit the black sedan when merging into the right lane.";
         document.getElementById("wrong").innerHTML = "";
+      }
+
+      function plus() {
+        var dog;
+        var i = parseInt(window.localStorage.getItem("i"));
+        var num = window.localStorage.getItem("num").split(",");
+        var pages = window.localStorage.getItem("pages").split(",");
+        i = i + 1;
+        dog = pages[num[i]];
+
+        window.localStorage.setItem("i", i.toString());
+        return dog;
       }
     </script>
   </body>

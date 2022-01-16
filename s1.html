@@ -38,6 +38,10 @@
       <p id="right"></p>
     </div>
 
+    <button class="button" onclick="window.location.href=plus()" )>
+      Start
+    </button>
+
     <script>
       function Wrong() {
         document.getElementById("wrong").innerHTML = "Aw, too bad, try again!";
@@ -47,6 +51,19 @@
         document.getElementById("right").innerHTML =
           "Good Job! You might hit the black sedan when merging into the right lane.";
         document.getElementById("wrong").innerHTML = "";
+      }
+
+      function plus() {
+        var dog;
+        var i = parseInt(window.localStorage.getItem("i"));
+        var num = window.localStorage.getItem("num").split(",");
+        var pages = window.localStorage.getItem("pages").split(",");
+        console.log(i, num, pages);
+        i = i + 1;
+        dog = pages[num[i]];
+
+        window.localStorage.setItem("i", i.toString());
+        return dog;
       }
     </script>
   </body>

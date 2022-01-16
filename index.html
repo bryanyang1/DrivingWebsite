@@ -5,7 +5,7 @@
 
     <style>
       body {
-        background-image: url("Pictures/Screenshot\ \(253\).png");
+        background-image: url("Pictures/Screenshot\ (253).png");
         background-color: #cccccc;
         background-attachment: fixed;
         background-size: 100% 100%;
@@ -22,10 +22,51 @@
       <a href="index.html" class="navi">Home</a>
       <a href="about.html" class="navi">About</a>
     </nav>
-    <div class="IntroText" href="s8.html" target="_blank">
-      <button class="button" onclick="window.location.href='s8.html'">
+    <p class="center">DRIVING AID</p>
+    <div class="IntroText" href="s1.html" target="_blank">
+      <button class="button" onclick="window.location.href=showRandomPage()">
         Start
       </button>
+      <p id="demo"></p>
     </div>
+    <script>
+      function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+
+      function store5integer() {
+        const numbers = [0, 0, 0, 0, 0];
+
+        numbers[0] = getRndInteger(1, 8);
+
+        for (let i = 1; i < numbers.length; i++) {
+          numbers[i] = getRndInteger(1, 8);
+
+          while (numbers[i] == numbers[i - 1]) {
+            numbers[i] = getRndInteger(1, 8);
+          }
+        }
+        return numbers;
+      }
+      var page1 = "s1.html";
+      var page2 = "s2.html";
+      var page3 = "s3.html";
+      var page4 = "s4.html";
+      var page5 = "s5.html";
+      var page6 = "s6.html";
+      var page7 = "s7.html";
+      var page8 = "s8.html";
+
+      var pages = [page1, page2, page3, page4, page5, page6, page7, page8];
+      var num = [0, 0, 0, 0, 0];
+      function showRandomPage() {
+        var num = store5integer();
+        i = 0;
+        window.localStorage.setItem("pages", pages);
+        window.localStorage.setItem("num", num);
+        window.localStorage.setItem("i", i.toString());
+        return pages[num[i]];
+      }
+    </script>
   </body>
 </html>
