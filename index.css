@@ -16,9 +16,13 @@
   background-color: #4caf50;
 }
 
+.next {
+  background-color: #4caf50;
+}
+
 .question {
   background-color: rgb(255, 255, 255);
-  height: 280px;
+  height: 325px;
   width: 200px;
   border: 5px solid rgb(0, 0, 0);
   padding: 20px;

@@ -2,6 +2,12 @@
 
 Welcome to drivingaid.co!
 
+TO DO:
+
+- crahses after 5 iterations
+- move the start button on the scenarion pages
+- add button that clears local storage on the 5th iterartion and sends back to home pages
+
 Scenario 1:
 What potential dangers are present when turning right?
 You might hit the black sedan when merging into the right lane.
