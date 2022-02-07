@@ -2,6 +2,15 @@
 
 Welcome to drivingaid.co!
 
+This project was initiated for a Hackathon (NwsHack 2022). We participated in a team of 2. Myself, Bryan Yang and Kyle Ah Von. 
+This is our first attempt at a fully operational website using HTML, CSS and Javascript. There are no separate JavaScript files. They are embedded inside of 
+the HTML files as scripts. 
+
+The website aims to help people with driving anxiety or those who are new drivers to get a bit more accustomed to real-life situations. We took pictures of busy
+intersections and created a quix style website. Javascript was primarily used for randomizing scenarios and checking right answers.
+
+Below are some of the tasks and scenarios that the website will display. 
+
 TO DO:
 
 - crahses after 5 iterations
